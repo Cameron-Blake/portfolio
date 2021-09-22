@@ -100,8 +100,17 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-color: var(--second);
+    border-color: 5px solid var(--second);
 }
+.page-section h2{
+  border-right: 4px solid var(--main);
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+
+}
+
+
 #contact address {
     display: flex;
     flex-wrap: wrap;
