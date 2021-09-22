@@ -9,6 +9,13 @@
 }
 
 
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
 
 header {
     display: flex;
@@ -16,6 +23,13 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;  
+    padding: 15px 6% 15px 0;
+}
+
+header h1 {
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    line-height: 1;
 }
 
 nav {
@@ -24,8 +38,8 @@ nav {
     flex-wrap: wrap;  
 }
 
-.banner {
-    background-image: url();
+#banner {
+    background-image: url("../portfolio/images/banner2.jpg");
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -33,13 +47,23 @@ nav {
   
 }
 
-.banner h2 {
+#banner h2 {
     display: inline;
     margin: 0;
     padding: 5px 10px;
   
 }
 
+#banner div {
+    flex: 0 0 70%;
+  }
+  
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
 
 main {
     margin-top: 15px;
@@ -53,6 +77,8 @@ main {
   }
 
 .flexbox {
+    border: 5px solid var(--main);
+    margin: 0.5em;
     display: flex;
     align-items: flex-end;
     background-color: grey;  
@@ -60,14 +86,21 @@ main {
     padding: 0 0 20px 0;
     min-height: 150px;
     max-height: 150px;
-  
+    flex-basis: calc(50% - 1em);  
 }
 
-#page-section {
+.flexbox:first-child{
+    min-height: 400px;
+    flex-basis: 100%;
+
+}
+
+.page-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-color: var(--second);
 }
 #contact address {
     display: flex;
@@ -79,16 +112,16 @@ main {
 }
 
 
-.project1 {
-    background-image: url();
+#project1 {
+    background-image: url("../portfolio/images/project1.png");
 }
 
-.quiz {
-    background-image: url();
+#quiz {
+    background-image: url("../portfolio/images/quiz.png");
 }
 
-.calender {
-    background-image: url();
+#calender {
+    background-image: url("../portfolio/images/scheduler.png");
 }
 
 @media screen and (max-width: 980px) {
