@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root {
     --main: ;
     --second: ;
@@ -12,6 +16,12 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;  
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
 }
 
 .flex-container {
