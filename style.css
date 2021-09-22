@@ -24,6 +24,11 @@ nav {
     flex-wrap: wrap;  
 }
 
+main {
+    margin-top: 15px;
+    margin-bottom: 30px;  
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
