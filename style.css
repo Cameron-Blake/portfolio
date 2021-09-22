@@ -24,6 +24,18 @@ nav {
     flex-wrap: wrap;  
 }
 
+.banner {
+    background-image: url();
+
+
+}
+
+.banner h2 {
+    display: inline;
+
+}
+
+
 main {
     margin-top: 15px;
     margin-bottom: 30px;  
@@ -39,9 +51,14 @@ main {
     display: flex;
     align-items: flex-end;
     background-color: grey;  
+    background-size: 150%;
+    padding: 0 0 20px 0;
+    min-height: 150px;
+    max-height: 150px;
+  
 }
 
-section {
+#page-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,3 +72,71 @@ section {
     margin: 2px 2px 2px 2px;
     padding: 1px 1px 1px 1px;
 }
+
+
+.project1 {
+    background-image: url();
+}
+
+.quiz {
+    background-image: url();
+}
+
+.calender {
+    background-image: url();
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
