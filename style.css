@@ -3,8 +3,8 @@
 }
 
 :root {
-    --main: ;
-    --second: ;
+    --main: pink;
+    --second: black;
     
 }
 
@@ -26,13 +26,18 @@ nav {
 
 .banner {
     background-image: url();
-
-
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  
 }
 
 .banner h2 {
     display: inline;
-
+    margin: 0;
+    padding: 5px 10px;
+  
 }
 
 
